@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-extrabold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway/raleway-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/raleway/raleway-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'montserratextralight';
+    src: url('../fonts/montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-extralight-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('..fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+        url('..fonts/roboto/roboto-regular-webfont.woff') format('woff');
+}
+
+body {
+    font-family: 'montserratregular', 'arial', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-image: url(../img/main-slider-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    max-height: 1024px;
+    background-color: rgba(17, 17, 17, 0.7);
+    position: relative;
+}
+
+nav {
+    max-width: 1280px;
+    padding: 40px 35px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    fill: #fff;
+}
+
+.logo:hover .logo-img {
+    fill: #d3c1ad;
+}
+
+.logo-text {
+    font-family: 'ralewayregular', 'arial, sans-serif';
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: -1.36px;
+    text-transform: capitalize;
+}
+
+.logo:hover .logo-text {
+    color: #d3c1ad;
+}
+
+.top-menu {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-menu-item-link {
+    color: #fff;
+    padding: 0 10px;
+    font-family: 'montserratregular', 'arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.top-menu-item-link:hover,
+.top-menu-item-link:active {
+    color: #d3c1ad;
+}
+
+.top-menu-item-icon {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
+
+.top-menu-item-icon:hover,
+.top-menu-item-icon:active {
+    fill: #d3c1ad;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 260px 0;
+}
+
+.slider-prev {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.slider-prev:after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.slider-fwd {
+    display: block;
+    width: 40px;
+    height: 73px;
+    position: relative;
+    margin-right: 40px;
+}
+
+.slider-fwd:after {
+    content: "";
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.slider-prev:hover:after {
+    border-top: 2px solid #d3c1ad;
+    border-left: 2px solid #d3c1ad;
+}
+
+.slider-fwd:hover:after {
+    border-top: 2px solid #d3c1ad;
+    border-right: 2px solid #d3c1ad;
+}
+
+
+.slider-content {
+    margin: auto;
+    width: 610px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.slider-subheading {
+    color: #ffffff;
+    font-family: 'ralewayregular', 'arial, sans-serif';
+    font-size: 36px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading1 {
+    color: #ffffff;
+    font-family: 'ralewayextrabold', 'arial, sans-serif';
+    font-size: 52px;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slider-content-text {
+    color: #ffffff;
+    font-family: 'montserratregular', 'arial, sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    width: 170px;
+    min-height: 50px;
+    border-radius: 3px;
+    background-color: #998675;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 3px solid #736356;
+    font-family: 'ralewayregular', 'arial', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 23px;
+    text-align: center;
+    line-height: 50px;
+    margin: 54px auto 0;
+}
+
+.btn:hover {
+    background-color: #736356;
+    border-bottom: 3px solid #998675;
+    color: #ccc;
+}
+
+.btn:active {
+    color: #fff;
+}
+
+.pagination {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -53.5px;
+}
+
+.pagination-item {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #d3c1ad;
+    margin-right: 8px;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
+}
+
+.pagination-item:nth-child(2),
+.pagination-item:hover,
+.pagination-item:active {
+    border: 2px solid #d3c1ad;
+    background: none;
+    margin-right: 8px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    box-sizing: border-box;
+}
+
+.services-item {
+    width: 267px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.services-item:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+.services-item:hover:after {
+    background-color: #c7b299;
+}
+
+.heading4 {
+    display: block;
+    color: #555555;
+    font-family: 'ralewaysemibold', 'arial', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.services-item:hover .heading4 {
+    color: #c7b299;
+}
+
+.services-item:hover .services-icon {
+    fill: #c7b299;
+}
+
+.services-text {
+    color: #8c8c8c;
+    font-family: 'montserratregular', 'arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.realization {
+    background-color: #fbfaf8;
+    padding: 80px 0 0;
+}
+
+.heading2 {
+    display: block;
+    color: #555555;
+    font-family: 'ralewaysemibold', 'arial', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.realization-text {
+    max-width: 757px;
+    text-align: center;
+    margin: 0 auto;
+    color: #8c8c8c;
+    font-family: 'montserratregular', 'arial', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.realization-images {
+    max-width: 1280px;
+    position: relative;
+    margin: 40px auto 0;
+    min-height: 482px;
+}
+
+.realization-image-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.realization-image-left:hover {
+    z-index: 11;
+}
+
+.realization-image-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.realization-image-right:hover {
+    z-index: 11;
+}
+
+.realization-image-center {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -378px;
+    z-index: 10;
+}
